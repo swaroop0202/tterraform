@@ -33,6 +33,7 @@ pipeline {
             steps {
                 sh 'echo this is deploy'
             }
+        }    
         stage('output') {
             steps {
                 echo "Hello ${params.PERSON}"
@@ -47,5 +48,4 @@ pipeline {
             }
         }
     }
-}
 }
