@@ -15,9 +15,9 @@ pipeline {
                 sh 'terraform init'
             }
         }
-        stage('Test') {
+        stage('plan') {
             steps {
-                sh 'echo this is test'
+                sh 'terraform plan'
             }
         }
         stage('Deploy') {
